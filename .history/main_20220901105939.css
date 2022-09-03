@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+section {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.title {
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-btn {
+    color: #4097FF;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2F3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    background: white;
+}
+
+
+/* .background-color{
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.header {
+    position: sticky;
+}
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu a {
+    letter-spacing: 1.5px;
+}
+
+.logo {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.card {
+    width: 280px;
+    height: 350px;
+    background-color: white;
+}
+
+.card-item {
+    border-radius: 100px;
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    word-break: break-all;
+}
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu a {
+    letter-spacing: 1.5px;
+}
+
+.logo {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.footer-logo {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.card {
+    width: 280px;
+    height: 350px;
+    background-color: white;
+}
+
+.card-item {
+    border-radius: 100px;
+}
+
+ion-icon,
+ion-icon:hover,
+ion-icon:focus,
+ion-icon:visited {
+    text-decoration: none;
+}
