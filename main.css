@@ -39,6 +39,35 @@
         border-radius: 100px;
     }
     
+    .discover {
+        text-decoration: none;
+        border: 1px solid blue;
+        transition: color 0.25s;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .discover:before {
+        content: "";
+        background-color: orange;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.35s linear;
+    }
+    
+    .discover:hover:before {
+        height: 100%;
+    }
+    
+    .discover:hover {
+        color: white;
+    }
+    
     .card {
         text-decoration: none;
         border: 1px solid orange;
@@ -67,7 +96,6 @@
     .card:hover {
         color: white;
     }
-    /* Why should you choose */
     
     .button {
         text-decoration: none;
@@ -88,7 +116,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        transition: all 0.5s linear;
+        transition: all 0.35s linear;
     }
     
     .button:hover:before {
@@ -117,7 +145,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        transition: all 0.4s linear;
+        transition: all 0.35s linear;
     }
     
     .box:hover:before {
@@ -130,7 +158,6 @@
     
     .lined {
         text-decoration: none;
-        /* border: 1px solid red; */
         transition: color 0.25s;
         position: relative;
         z-index: 1;
@@ -157,6 +184,35 @@
         color: red;
     }
     
+    .about {
+        text-decoration: none;
+        transition: color 0.25s;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .about:before {
+        content: "";
+        background-color: yellow;
+        position: absolute;
+        border-radius: 10px;
+        height: 100%;
+        width: 0;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s linear;
+    }
+    
+    .about:hover:before {
+        width: 100%;
+    }
+    
+    .about:hover {
+        color: red;
+    }
+    
     @media (min-width: 320px) and (max-width: 480px) {
         .header1 {
             display: flex;
@@ -175,6 +231,9 @@
             font-size: 15px;
             line-height: 3px;
         }
+        .always {
+            font-size: 25px!important;
+        }
         .notech1 {
             display: flex;
             flex-direction: column;
@@ -190,6 +249,9 @@
             flex-direction: column!important;
         }
         .header-menu .menu-item {
+            display: none;
+        }
+        .header-menu .form {
             display: none;
         }
         .open {
@@ -242,6 +304,9 @@
         .footer-logo {
             width: 40px!important;
             height: 40px!important;
+        }
+        .footer2 {
+            margin-top: 0px!important;
         }
     }
     
@@ -298,8 +363,9 @@
             font-size: 25px!important;
         }
         .making {
-            display: flex!important;
-            flex-direction: column!important;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .it-services {
             display: flex!important;
@@ -371,11 +437,6 @@
         .services {
             font-size: 25px!important;
         }
-        /* .services1 {
-            display: flex!important;
-            flex-direction: column!important;
-            flex: wrap!important;
-        } */
         .should {
             display: flex !important;
             flex-direction: column!important;
@@ -437,7 +498,7 @@
         padding: 10px;
         text-decoration: none;
         font-size: 20px;
-        color: #818181;
+        color: #00a8e8;
         display: block;
         transition: 0.3s;
     }
